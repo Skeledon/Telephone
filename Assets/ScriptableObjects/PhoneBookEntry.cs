@@ -6,6 +6,6 @@ public class PhoneBookEntry : ScriptableObject
 {
     public string Name;
     public string PhoneNumber;
-    public string ChapterID;
+    public Chapter Chapter;
 }
 

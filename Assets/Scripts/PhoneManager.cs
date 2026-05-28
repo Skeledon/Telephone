@@ -2,11 +2,18 @@ using UnityEngine;
 
 public class PhoneManager : MonoBehaviour
 {
-    private string currentNumber;
+    private string _currentNumber;
+
+    private PhoneBookHandler _phoneBookHandler;
+    private TextHandler _textHandler;
+    private StoryManager _storyManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        currentNumber = string.Empty;
+        _currentNumber = string.Empty;
+        _phoneBookHandler = GetComponent<PhoneBookHandler>();
+        _textHandler = GetComponent<TextHandler>();
+        _storyManager = GetComponent<StoryManager>();
     }
 
     // Update is called once per frame
@@ -22,7 +29,13 @@ public class PhoneManager : MonoBehaviour
 
     private void AddToNumber(string number)
     {
-        currentNumber += number;
-        Debug.Log(currentNumber);
+        _currentNumber += number;
+        Chapter c = _phoneBookHandler.GetChapterForPhoneNumber(_currentNumber);
+        if (c != null)
+        {
+            _storyManager.ExecuteChapter(c);
+            _currentNumber = string.Empty;
+        }
+
     }
 }

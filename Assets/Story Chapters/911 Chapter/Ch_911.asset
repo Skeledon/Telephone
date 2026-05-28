@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adfeee306a55cbe4dac2038b67a2674a, type: 3}
+  m_Name: Ch_911
+  m_EditorClassIdentifier: Assembly-CSharp::Chapter
+  Name: Ch_911
+  Segments:
+  - {fileID: 11400000, guid: 4864398fd2367ed4fb73d96a26c6d0f1, type: 2}
+  - {fileID: 11400000, guid: 0b0066df5fdf4d24787e23959944da20, type: 2}
+  - {fileID: 11400000, guid: fa516d5d1e77eec4a9be4c3c43baf5e0, type: 2}

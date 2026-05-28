@@ -72,3 +72,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Assets/Rewired/Internal/Assets/Extras/TouchControls.zip
 Assets/Rewired/Internal/Assets/Extras/TouchControls.zip.meta
+Assets/Google Sheets Service.asset
+Assets/Google Sheets Service.asset.meta

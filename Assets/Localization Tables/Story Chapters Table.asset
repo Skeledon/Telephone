@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Story Chapters Table
+  m_EditorClassIdentifier: Unity.Localization.Editor::UnityEditor.Localization.StringTableCollection
+  m_SharedTableData: {fileID: 11400000, guid: 1935fb0abdf46404f8ccd5c28443d7d9, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: dfa95e7dd493bef43a721dad3d43d779, type: 2}
+  - {fileID: 11400000, guid: 2b7d7cc6504f77a48ab956483a28f905, type: 2}
+  m_Extensions:
+  - rid: 8665072518700204326
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds:
+    - rid: 8665072518700204326
+      type: {class: GoogleSheetsExtension, ns: UnityEditor.Localization.Plugins.Google, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_SheetsServiceProvider: {fileID: 11400000, guid: f2b5fc8bcb932814c83509fea94a5ff7, type: 2}
+        m_SpreadsheetId: 13sDd1KCOu37qWT9-nD8Rnq0N5ymSqTJsGcEgob59roM
+        m_SheetId: 1997524124
+        m_Columns:
+        - rid: 8665072518700204328
+        - rid: 8665072518700204329
+        - rid: 8665072518700204331
+        m_RemoveMissingPulledKeys: 1
+    - rid: 8665072518700204328
+      type: {class: KeyColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: A
+    - rid: 8665072518700204329
+      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: B
+        m_LocaleIdentifier:
+          m_Code: en
+        m_IncludeComments: 0
+    - rid: 8665072518700204331
+      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: C
+        m_LocaleIdentifier:
+          m_Code: it
+        m_IncludeComments: 0

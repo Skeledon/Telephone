@@ -15,8 +15,55 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Shared
   m_GUID: ed5cce650becbbe4c81fd8dd19a5e334
   m_SerializeEntries:
+  - m_GUID: 16a2111b0411a8e41aaadddc7b1b75f3
+    m_Address: Document3
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-it
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 171a00cc5826fa341afbd8d862040280
+    m_Address: Document 4
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-it
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1935fb0abdf46404f8ccd5c28443d7d9
     m_Address: Assets/Localization Tables/Story Chapters Table Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad9d21d9ba50cb848a8ed554861de0cc
+    m_Address: Document
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-it
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd797f395b3363846ae9e6f6b7af8f4f
+    m_Address: Document5
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-it
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bec33f6313103384090c1904e2c55b7d
+    m_Address: Document1
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-it
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d45d5505db72fee4eaf2b1594d295eba
+    m_Address: Document2
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Locale-it
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff3d1788d0b2f784a8eec2c98f52809b
+    m_Address: Assets/Localization Tables/Documents Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

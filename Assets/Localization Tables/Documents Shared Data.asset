@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Documents Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: Documents
+  m_TableCollectionNameGuidString: ff3d1788d0b2f784a8eec2c98f52809b
+  m_Entries:
+  - m_Id: 19587989504
+    m_Key: Test_Doc1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 104187101184
+    m_Key: Test_Doc2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 171899944960
+    m_Key: Test_Doc3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214371467264
+    m_Key: Test_Doc4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 517258936320
+    m_Key: Test_Doc5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 602059374592
+    m_Key: Test_Doc6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 722217795584
+    m_Key: Test_Doc7
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items:
+    - rid: 8665072518700204371
+  m_KeyGenerator:
+    rid: 8665072518700204370
+  references:
+    version: 2
+    RefIds:
+    - rid: 8665072518700204370
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1780063365639
+    - rid: 8665072518700204371
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 19587989504
+          m_TableCodes:
+          - en
+          - it
+        - m_KeyId: 104187101184
+          m_TableCodes:
+          - en
+          - it
+        - m_KeyId: 171899944960
+          m_TableCodes:
+          - en
+          - it
+        - m_KeyId: 214371467264
+          m_TableCodes:
+          - en
+          - it
+        - m_KeyId: 517258936320
+          m_TableCodes:
+          - en
+          - it
+        - m_KeyId: 602059374592
+          m_TableCodes:
+          - en
+          - it
+        - m_KeyId: 722217795584
+          m_TableCodes:
+          - en
+          - it
+        m_TypeString: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null

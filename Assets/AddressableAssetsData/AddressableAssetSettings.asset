@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 159e52a849c4be24292941710fd8f1cf
   m_currentHash:
     serializedVersion: 2
-    Hash: 5c5819d631648e55e2b8e4ffc2bac3db
+    Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -63,7 +63,12 @@ MonoBehaviour:
   m_GroupAssets:
   - {fileID: 11400000, guid: 72556bb70abdfdc45bdfd1060cd44a24, type: 2}
   - {fileID: 11400000, guid: 62f7a3d157e0f274cbfe1fb4d06a2aad, type: 2}
+  - {fileID: 11400000, guid: ca524cdbd85f2eb4b8f1e5c7f8ba1b43, type: 2}
+  - {fileID: 11400000, guid: d04d169f3472cbf43b3a24fac80a158a, type: 2}
+  - {fileID: 11400000, guid: a8ab43ed96c45b144b55ed304c6d68c3, type: 2}
   - {fileID: 11400000, guid: def85638e15538d4c989adea85674ef5, type: 2}
+  - {fileID: 11400000, guid: 85d49f3e9e266d44ca5064af54b9e1d1, type: 2}
+  - {fileID: 11400000, guid: f8b7b9f5cb171d44a8b77e27c948b10b, type: 2}
   - {fileID: 11400000, guid: 1fe64da6c14e58d449aa4b21708e806b, type: 2}
   - {fileID: 11400000, guid: 293b64c3960c30144934197d580fb944, type: 2}
   m_BuildSettings:
@@ -108,6 +113,7 @@ MonoBehaviour:
     - Locale
     - Locale-en
     - Locale-it
+    - Documents
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 7814660c1643df444821ebf51bc00574, type: 2}

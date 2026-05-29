@@ -231,6 +231,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2850467367410076058, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 711b24a64c9547d48bafb2c3c6dadecf, type: 3}
     - target: {fileID: 4123086197704494684, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_Name
       value: PhoneButtonUI (10)
@@ -356,6 +360,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2850467367410076058, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 711b24a64c9547d48bafb2c3c6dadecf, type: 3}
     - target: {fileID: 4123086197704494684, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_Name
       value: PhoneButtonUI (11)
@@ -486,6 +494,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2850467367410076058, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 945974d730cabbe4ea7ea6c35ae2df4f, type: 3}
     - target: {fileID: 4123086197704494684, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_Name
       value: PhoneButtonUI (7)
@@ -842,6 +854,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2850467367410076058, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: be9d733648bab3d4eb91436a714cd87a, type: 3}
     - target: {fileID: 4123086197704494684, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_Name
       value: PhoneButtonUI (1)
@@ -1268,6 +1284,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2850467367410076058, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 8edf4b6d8dee75644abb654c5ffe16df, type: 3}
     - target: {fileID: 4123086197704494684, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_Name
       value: PhoneButtonUI (3)
@@ -1393,6 +1413,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2850467367410076058, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 9bdb2d573c5724e4994884e268aeb42c, type: 3}
     - target: {fileID: 4123086197704494684, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_Name
       value: PhoneButtonUI (5)
@@ -1518,6 +1542,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2850467367410076058, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 12b89fb0773ca3c4b9ce19ead630f26d, type: 3}
     - target: {fileID: 4123086197704494684, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_Name
       value: PhoneButtonUI (4)
@@ -1653,6 +1681,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2850467367410076058, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 3bd045708be9902499ae3fff5b12f3c4, type: 3}
     - target: {fileID: 4123086197704494684, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_Name
       value: PhoneButtonUI (8)
@@ -1862,6 +1894,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2850467367410076058, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 711b24a64c9547d48bafb2c3c6dadecf, type: 3}
     - target: {fileID: 4123086197704494684, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_Name
       value: PhoneButtonUI (9)
@@ -2090,6 +2126,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2850467367410076058, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: ab986f944a268b04a8b515a8f0519a1f, type: 3}
     - target: {fileID: 4123086197704494684, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_Name
       value: PhoneButtonUI (2)
@@ -2220,6 +2260,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2850467367410076058, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d7e310ca7f69134aa89df5e0daa110c, type: 3}
     - target: {fileID: 4123086197704494684, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_Name
       value: PhoneButtonUI (6)
@@ -2521,10 +2565,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1731324459866074446, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1731324459866074446, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 5
       objectReference: {fileID: 0}
@@ -2532,10 +2572,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 896559024}
-    - target: {fileID: 1731324459866074446, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1731324459866074446, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PhoneButtonPressed
@@ -2545,6 +2581,10 @@ PrefabInstance:
       value: PhoneManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1731324459866074446, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731324459866074446, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 1
       objectReference: {fileID: 0}
@@ -2552,6 +2592,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2850467367410076058, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: d4b5ec7a5dfa45c4b9e4afa9f6ebc666, type: 3}
     - target: {fileID: 4123086197704494684, guid: e5760976bd5070e4daf2b66dbca115fd, type: 3}
       propertyPath: m_Name
       value: PhoneButtonUI

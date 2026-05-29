@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Chapter
   Name: Ch_911
   Segments:
+  - {fileID: 11400000, guid: 40cdb4d0c6a58b74591f19fa2fcad0e7, type: 2}
   - {fileID: 11400000, guid: 4864398fd2367ed4fb73d96a26c6d0f1, type: 2}
   - {fileID: 11400000, guid: 0b0066df5fdf4d24787e23959944da20, type: 2}
   - {fileID: 11400000, guid: fa516d5d1e77eec4a9be4c3c43baf5e0, type: 2}
+  - {fileID: 11400000, guid: 70a2ab9893bbcbc44a1ca263404f52aa, type: 2}

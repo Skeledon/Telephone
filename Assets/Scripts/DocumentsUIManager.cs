@@ -8,6 +8,12 @@ public class DocumentsUIManager : MonoBehaviour
     [SerializeField]
     private DocumentHolder _holder;
 
+    [SerializeField]
+    private AudioClip _turnPageClip;
+
+    [SerializeField]
+    private AudioSource _audioSource;
+
     private int _currentIndex = 0;
 
     private string[] _documentsToShow;
@@ -73,19 +79,31 @@ public class DocumentsUIManager : MonoBehaviour
         //TODO Temporary
         if (Keyboard.current.leftArrowKey.wasPressedThisFrame)
         {
-            if (_currentIndex >= 1)
-            {
-                _currentIndex--;
-                SetImages();
-            }
+            Previous();
         }
         else if (Keyboard.current.rightArrowKey.wasPressedThisFrame)
         {
-            if (_currentIndex + 1 < _documentsToShow.Length)
-            {
-                _currentIndex++;
-                SetImages();
-            }
+            Next();
+        }
+    }
+
+    public void Previous()
+    {
+        if (_currentIndex >= 1)
+        {
+            _currentIndex--;
+            SetImages();
+            _audioSource.PlayOneShot(_turnPageClip);
+        }
+    }
+
+    public void Next()
+    {
+        if (_currentIndex + 1 < _documentsToShow.Length)
+        {
+            _currentIndex++;
+            SetImages();
+            _audioSource.PlayOneShot(_turnPageClip);
         }
     }
 

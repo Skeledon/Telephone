@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-English (en)
   m_GUID: cece53f0c65e28345882dea0630af8ce
   m_SerializeEntries:
+  - m_GUID: 36442600e924fec40a18b077cfc88c10
+    m_Address: UI Table_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dfa95e7dd493bef43a721dad3d43d779
     m_Address: Story Chapters Table_en
     m_ReadOnly: 1

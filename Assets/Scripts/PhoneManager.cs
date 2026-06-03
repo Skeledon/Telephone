@@ -7,6 +7,9 @@ public class PhoneManager : MonoBehaviour
     private PhoneBookHandler _phoneBookHandler;
     private TextHandler _textHandler;
     private StoryManager _storyManager;
+
+    public GameObject HangUpButton;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +27,7 @@ public class PhoneManager : MonoBehaviour
 
     public void PhoneButtonPressed(string key)
     {
+        HangUpButton.SetActive(true);
         AddToNumber(key);
     }
 
@@ -34,8 +38,14 @@ public class PhoneManager : MonoBehaviour
         if (c != null)
         {
             _storyManager.ExecuteChapter(c);
-            _currentNumber = string.Empty;
+            ResetPhone();
         }
 
+    }
+
+    public void ResetPhone()
+    {
+        _currentNumber = string.Empty;
+        HangUpButton.SetActive(false);
     }
 }

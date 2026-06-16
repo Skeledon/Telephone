@@ -5,6 +5,8 @@ using UnityEngine;
 public class ChapterSegment : ScriptableObject
 {
     public string LocId;
+
+    [Tooltip("Time to wait before starting the next chapter segment. If this is 0 it uses the text length")]
     public float TimeToWait;
 
     public AudioClip AudioClip;

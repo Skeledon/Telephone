@@ -19,6 +19,10 @@ MonoBehaviour:
     m_Key: Loc_Empty
     m_Metadata:
       m_Items: []
+  - m_Id: 4640205722681344
+    m_Key: Loc_Generic_Hangup
+    m_Metadata:
+      m_Items: []
   - m_Id: 137682812928
     m_Key: Loc_911_01
     m_Metadata:

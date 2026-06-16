@@ -50,7 +50,11 @@ public class StoryManager : MonoBehaviour
             //If the text is empty, the text part of the wait time is ignored, so that the player doesn't have to wait for nothing
             //The wait time in the segment is ignored if the text time is longer
             float textTime = _textHandler.GetTextLength() == 0 ? 0 : _baseTime + _timePerCharacter * _textHandler.GetTextLength();
-            float timeToWait = Mathf.Max(segment.TimeToWait, textTime);
+            float timeToWait = textTime;
+            if (segment.TimeToWait != 0)
+            {
+                timeToWait = segment.TimeToWait;
+            }
             float targetTime = Time.time + timeToWait;
             Debug.Log("Time to wait: " + timeToWait + "Text Length: " + _textHandler.GetTextLength());
 

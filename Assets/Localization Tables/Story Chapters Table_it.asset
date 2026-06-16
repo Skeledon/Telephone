@@ -32,6 +32,10 @@ MonoBehaviour:
     m_Localized: "C'\xE8 nessuno?"
     m_Metadata:
       m_Items: []
+  - m_Id: 4640205722681344
+    m_Localized: '*Click*'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

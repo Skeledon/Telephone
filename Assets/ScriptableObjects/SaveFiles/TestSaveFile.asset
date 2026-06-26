@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SaveFile
   SavedDocuments:
   - DocID: Test_Doc1
-    IsNew: 0
+    IsNew: 1
   - DocID: Test_Doc2
-    IsNew: 0
+    IsNew: 1
   - DocID: Test_Doc3
-    IsNew: 0
+    IsNew: 1
   - DocID: Test_Doc4
-    IsNew: 0
+    IsNew: 1
   - DocID: Test_Doc5
     IsNew: 1
   - DocID: Test_Doc6
-    IsNew: 0
+    IsNew: 1
   - DocID: Test_Doc7
-    IsNew: 0
+    IsNew: 1

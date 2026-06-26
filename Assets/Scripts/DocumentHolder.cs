@@ -22,6 +22,9 @@ public class DocumentHolder : MonoBehaviour
 
     private SaveManager _saveManager;
 
+    [SerializeField]
+    private GameObject _newIcon;
+
     private async void Awake()
     {
         handle = Addressables.LoadAssetsAsync<Document>("Documents",null);
@@ -98,11 +101,54 @@ public class DocumentHolder : MonoBehaviour
         {
             Debug.LogError($"Document with ID {docID} not found");
         }
+        CheckNewDocuments();
+    }
+
+    public void MarkDocumentAsRead(string docID)
+    {
+        int index = _documentsList.FindIndex(d => d.Doc.DocID == docID);
+        DocumentContainer container = _documentsList[index];
+        if (container.Doc != null)
+        {
+            container.IsNew = false;
+            _documentsList[index] = container;
+        }
+        else
+        {
+            Debug.LogError($"Document with ID {docID} not found");
+        }
+        CheckNewDocuments();
     }
 
     public DocumentContainer[] GetCollectedDocuments()
     {
         return _documentsList.FindAll(d => d.IsCollected).ToArray();
+    }
+
+    public DocumentContainer GetDocument(string docID)
+    {
+        int index = _documentsList.FindIndex(d => d.Doc.DocID == docID);
+        if (index != -1)
+        {
+            return _documentsList[index];
+        }
+        else
+        {
+            Debug.LogError($"Document with ID {docID} not found");
+            return default;
+        }
+    }
+
+    private void CheckNewDocuments()
+    { 
+        if(_documentsList.FindAll(d => d.IsNew).Count > 0)
+        {
+            _newIcon.SetActive(true);
+        }
+        else
+        {
+            _newIcon.SetActive(false);
+        }
     }
 
 }

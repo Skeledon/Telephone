@@ -20,10 +20,18 @@ public class DocumentsUIManager : MonoBehaviour
 
 
     //Temporary interface for testing, to be replaced with the actual UI
-    public LocalizeSpriteEvent LeftObject;
-    public LocalizeSpriteEvent RightObject;
-    public LocalizeSpriteEvent MiddleObject;
+    //public LocalizeSpriteEvent LeftObject;
+    //public LocalizeSpriteEvent RightObject;
+    //public LocalizeSpriteEvent MiddleObject;
 
+    [SerializeField]
+    private DocumentUIItem _leftObject;
+
+    [SerializeField]
+    private DocumentUIItem _rightObject;
+
+    [SerializeField]
+    private DocumentUIItem _middleObject;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
 
@@ -48,27 +56,36 @@ public class DocumentsUIManager : MonoBehaviour
 
     private void SetImages()
     {
-        MiddleObject.AssetReference.TableEntryReference = _documentsToShow[_currentIndex];
+        //MiddleObject.AssetReference.TableEntryReference = _documentsToShow[_currentIndex];
+        _middleObject.SetImage(_holder.GetDocument(_documentsToShow[_currentIndex]));
+        _holder.MarkDocumentAsRead(_documentsToShow[_currentIndex]);
+
         if (_currentIndex + 1 < _documentsToShow.Length)
         {
-            RightObject.GetComponent<Image>().enabled = true;
-            RightObject.AssetReference.TableEntryReference = _documentsToShow[_currentIndex + 1];
+            //RightObject.GetComponent<Image>().enabled = true;
+            //RightObject.AssetReference.TableEntryReference = _documentsToShow[_currentIndex + 1];
+            _rightObject.SetImage(_holder.GetDocument(_documentsToShow[_currentIndex + 1]));
+            _rightObject.SetVisible(true);
         }
         else
         {
-            RightObject.AssetReference.TableEntryReference = string.Empty;
-            RightObject.GetComponent<Image>().enabled = false;
+            //RightObject.AssetReference.TableEntryReference = string.Empty;
+            //RightObject.GetComponent<Image>().enabled = false;
+            _rightObject.SetVisible(false);
         }
 
         if (_currentIndex >= 1)
         {
-            LeftObject.GetComponent<Image>().enabled = true;
-            LeftObject.AssetReference.TableEntryReference = _documentsToShow[_currentIndex - 1];
+            //LeftObject.GetComponent<Image>().enabled = true;
+            //LeftObject.AssetReference.TableEntryReference = _documentsToShow[_currentIndex - 1];
+            _leftObject.SetImage(_holder.GetDocument(_documentsToShow[_currentIndex - 1]));
+            _leftObject.SetVisible(true);
         }
         else
         {
-            LeftObject.AssetReference.TableEntryReference = string.Empty;
-            LeftObject.GetComponent<Image>().enabled = false;
+            //LeftObject.AssetReference.TableEntryReference = string.Empty;
+            //LeftObject.GetComponent<Image>().enabled = false;
+            _leftObject.SetVisible(false);
         }
 
 

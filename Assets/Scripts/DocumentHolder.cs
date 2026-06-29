@@ -71,8 +71,8 @@ public class DocumentHolder : MonoBehaviour
 
     private void LoadDocumentsFromSaveSystem()
     {
-        SaveFile.SavedDocument[] savedDocuments = _saveManager.GetSavedDocuments();
-        foreach (SaveFile.SavedDocument doc in savedDocuments)
+        SaveManager.SaveData saveData = _saveManager.LoadGame();
+        foreach (SaveManager.SaveData.SavedDocument doc in saveData.GetSavedDocuments())
         {
             int index = _documentsList.FindIndex(d => d.Doc.DocID == doc.DocID);
             DocumentContainer container = _documentsList[index];

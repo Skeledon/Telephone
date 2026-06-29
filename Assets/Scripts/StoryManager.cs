@@ -11,6 +11,9 @@ public class StoryManager : MonoBehaviour
     [SerializeField]
     private float _timePerCharacter = 0.1f;
 
+    [SerializeField]
+    private DocumentHolder _documentHolder;
+
     private TextHandler _textHandler;
     private AudioSource _audioSource;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -65,6 +68,10 @@ public class StoryManager : MonoBehaviour
                 {
                     keepLooping = false;
                 }
+            }
+            if(segment.DocId != null && segment.DocId != "")
+            {
+                _documentHolder.CollectDocument(segment.DocId, true);
             }
         }
         _textHandler.SetEmptyText();

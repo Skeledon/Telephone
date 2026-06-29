@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: Loc_Quit
     m_Metadata:
       m_Items: []
+  - m_Id: 9404045769375744
+    m_Key: Loc_Hangup
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -13,3 +13,7 @@ MonoBehaviour:
   m_Name: ST_911_03
   m_EditorClassIdentifier: Assembly-CSharp::ChapterSegmentText
   LocId: Loc_911_03
+  TimeToWait: 0
+  AudioClip: {fileID: 0}
+  AudioOneShot: 0
+  DocId: Test_Doc7

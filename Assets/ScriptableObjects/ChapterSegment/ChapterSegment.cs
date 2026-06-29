@@ -12,5 +12,7 @@ public class ChapterSegment : ScriptableObject
     public AudioClip AudioClip;
     public bool AudioOneShot = false;
     //TODO add doc to print
+
+    public string DocId;
 }
 

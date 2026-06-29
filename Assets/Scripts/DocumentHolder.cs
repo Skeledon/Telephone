@@ -25,6 +25,9 @@ public class DocumentHolder : MonoBehaviour
     [SerializeField]
     private GameObject _newIcon;
 
+    [SerializeField]
+    private AudioSource _audioSource;
+
     private async void Awake()
     {
         handle = Addressables.LoadAssetsAsync<Document>("Documents",null);
@@ -65,11 +68,6 @@ public class DocumentHolder : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void LoadDocumentsFromSaveSystem()
     {
@@ -89,6 +87,11 @@ public class DocumentHolder : MonoBehaviour
 
     public void CollectDocument(string docID)
     {
+        CollectDocument(docID, false);
+    }
+
+    public void CollectDocument(string docID, bool playPrintingSound)
+    {
         int index = _documentsList.FindIndex(d => d.Doc.DocID == docID);
         DocumentContainer container = _documentsList[index];
         if (container.Doc != null)
@@ -100,6 +103,10 @@ public class DocumentHolder : MonoBehaviour
         else
         {
             Debug.LogError($"Document with ID {docID} not found");
+        }
+        if (playPrintingSound)
+        {
+            _audioSource.Play();
         }
         CheckNewDocuments();
     }

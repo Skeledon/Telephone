@@ -48,7 +48,7 @@ public class DocumentHolder : MonoBehaviour
                 });
             }
 
-            _saveManager = GetComponent<SaveManager>();
+            _saveManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SaveManager>();
 
             //TODO probably temporary
             LoadDocumentsFromSaveSystem();
@@ -72,17 +72,21 @@ public class DocumentHolder : MonoBehaviour
     private void LoadDocumentsFromSaveSystem()
     {
         SaveManager.SaveData saveData = _saveManager.LoadGame();
-        foreach (SaveManager.SaveData.SavedDocument doc in saveData.GetSavedDocuments())
+        if (saveData != null)
         {
-            int index = _documentsList.FindIndex(d => d.Doc.DocID == doc.DocID);
-            DocumentContainer container = _documentsList[index];
-            if (container.Doc != null)
+            foreach (SaveManager.SaveData.SavedDocument doc in saveData.SavedDocuments)
             {
-                container.IsCollected = true;
-                container.IsNew = doc.IsNew;
-                _documentsList[index] = container;
+                int index = _documentsList.FindIndex(d => d.Doc.DocID == doc.DocID);
+                DocumentContainer container = _documentsList[index];
+                if (container.Doc != null)
+                {
+                    container.IsCollected = true;
+                    container.IsNew = doc.IsNew;
+                    _documentsList[index] = container;
+                }
             }
         }
+        CheckNewDocuments();
     }
 
     public void CollectDocument(string docID)
@@ -156,6 +160,14 @@ public class DocumentHolder : MonoBehaviour
         {
             _newIcon.SetActive(false);
         }
+    }
+
+    //DEBUG
+
+    private void OnApplicationQuit()
+    {
+        DocumentContainer[] tmp = _documentsList.FindAll(x => x.IsCollected).ToArray();
+        _saveManager.SaveGame(new SaveManager.SaveData(tmp));
     }
 
 }

@@ -3,6 +3,7 @@ using System.IO;
 using System.Text;
 using System.Security.Cryptography;
 using UnityEngine;
+using Newtonsoft.Json;
 
 public class SaveManager : MonoBehaviour
 {
@@ -15,21 +16,23 @@ public class SaveManager : MonoBehaviour
     void Awake()
     {
         settingsPath = Path.Combine(Application.persistentDataPath, "settings.json");
-        savePath = Path.Combine(Application.persistentDataPath, "save.dat");
+        savePath = Path.Combine(Application.persistentDataPath, "save.json");
 
         Debug.Log("Save folder: " + Application.persistentDataPath);
+
     }
 
     // =========================================================
     // SETTINGS (PLAIN TEXT - PLAYER EDITABLE)
     // =========================================================
 
-    [Serializable]
+    [Serializable, HideInInspector]
     public class SettingsData
     {
-        public int MusicVolume = 80;
-        public int SfxVolume = 80;
-        public bool FullScreen = true;
+        public float MusicVolume = 1;
+        public float SfxVolume = 1;
+        public float MasterVolume = 1;
+        public bool FullScreen = false;
         public int ResolutionX = 1920;
         public int ResolutionY = 1080;
         public string Language = "en";
@@ -37,8 +40,10 @@ public class SaveManager : MonoBehaviour
 
     public void SaveSettings(SettingsData settings)
     {
-        string json = JsonUtility.ToJson(settings, true);
+        string json = JsonConvert.SerializeObject(settings, Formatting.Indented);
         File.WriteAllText(settingsPath, json);
+
+        Debug.Log("Settings saved.");
     }
 
     public SettingsData LoadSettings()
@@ -47,16 +52,13 @@ public class SaveManager : MonoBehaviour
             return new SettingsData();
 
         string json = File.ReadAllText(settingsPath);
-        return JsonUtility.FromJson<SettingsData>(json);
+        return JsonConvert.DeserializeObject<SettingsData>(json);
     }
-
-    // =========================================================
-    // GAME SAVE (ENCRYPTED + INTEGRITY PROTECTED)
-    // =========================================================
 
     [Serializable]
     public class SaveData
     {
+
         [Serializable]
         public struct SavedDocument
         {
@@ -64,19 +66,34 @@ public class SaveManager : MonoBehaviour
             public bool IsNew;
         }
 
-        [SerializeField]
-        private SavedDocument[] SavedDocuments;
-        public SavedDocument[] GetSavedDocuments()
+        //Required for Json Deserialization
+        public SaveData()
+        { }
+
+        public SaveData(SavedDocument[] documents)
         {
-            return SavedDocuments;
+            SavedDocuments = documents;
         }
+
+        public SaveData(DocumentHolder.DocumentContainer[] documents)
+        {
+            SavedDocument[] tmp = new SavedDocument[documents.Length];
+            for(int i = 0; i< documents.Length; i++)
+            {
+                tmp[i].DocID = documents[i].Doc.DocID;
+                tmp[i].IsNew = documents[i].IsNew;
+            }
+            SavedDocuments = tmp;
+        }
+
+        public SavedDocument[] SavedDocuments;
     }
 
 
 
     public void SaveGame(SaveData save)
     {
-        string json = JsonUtility.ToJson(save);
+        string json = JsonConvert.SerializeObject(save, Formatting.Indented);
 
         File.WriteAllText(savePath, json);
 
@@ -89,7 +106,8 @@ public class SaveManager : MonoBehaviour
             return null;
 
         //TODO aggiungere loadgame
-        return null;
+        string json = File.ReadAllText(savePath);
+        return JsonConvert.DeserializeObject<SaveData>(json);
     }
 
 

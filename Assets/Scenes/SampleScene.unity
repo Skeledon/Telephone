@@ -130,7 +130,6 @@ GameObject:
   - component: {fileID: 5670980}
   - component: {fileID: 5670979}
   - component: {fileID: 5670981}
-  - component: {fileID: 5670982}
   - component: {fileID: 5670983}
   m_Layer: 0
   m_Name: DocumentHolder
@@ -231,19 +230,6 @@ MonoBehaviour:
   _documents: []
   _newIcon: {fileID: 561402719}
   _audioSource: {fileID: 5670983}
---- !u!114 &5670982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5670978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 995d3199f4b798447a49407dd2f2123d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SaveManager
-  _saveFile: {fileID: 11400000, guid: ad38fc1b159bc64448121f5f4c89a196, type: 2}
 --- !u!82 &5670983
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1592,7 +1578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &561402720
 Transform:
   m_ObjectHideFlags: 0
@@ -3974,7 +3960,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OptionsManager
   _optionsMainPanel: {fileID: 388160089}
-  _optionsData: {fileID: 11400000, guid: 8f1562f6d1677d64abcf3f3465cf8014, type: 2}
   _audioMixer: {fileID: 24100000, guid: 6f569454c771cb243801b907d670e28d, type: 2}
   _audioSlider: {fileID: 483657403}
   _resolutionDropdown: {fileID: 432715716}
@@ -6209,8 +6194,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1150478555}
-        m_TargetAssemblyTypeName: OptionsManager, Assembly-CSharp
-        m_MethodName: ChangeResolution
+        m_TargetAssemblyTypeName: OptionsUIManager, Assembly-CSharp
+        m_MethodName: ChangeFullScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
